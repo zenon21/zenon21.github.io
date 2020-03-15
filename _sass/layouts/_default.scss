@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh; /* always 100% height of viewport */
+  display: flex;
+  justify-content: center;
+}
+
+.outer-container {
+  width: 50%;
+}

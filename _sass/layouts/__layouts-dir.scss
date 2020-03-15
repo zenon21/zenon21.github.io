@@ -1,2 +1,6 @@
-/* Import all layouts */
+/* Import styling for _layouts files & _includes files */
+//_layouts
+@import 'default';
+
+//_includes
 @import 'navigation';

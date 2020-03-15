@@ -180,15 +180,28 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-p, nav { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; }
+p { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; }
 
 h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-style: normal; font-size: 54px; color: #515e85; }
 
-a:hover { color: #f25236; }
+/* only for links in paragraphs */
+p a:hover { color: #f25236; font-style: italic; }
 
 /* Import all layouts e.g. header, nav */
-/* Import all layouts */
-.current { color: #f25236; }
+/* Import styling for _layouts files & _includes files */
+html { height: 100%; }
+
+body { height: 100vh; /* always 100% height of viewport */ display: flex; justify-content: center; }
+
+.outer-container { width: 50%; }
+
+.navbar { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; font-size: 15px; }
+
+.nav-item { text-decoration: none; text-transform: uppercase; margin-right: 12px; }
+
+.nav-item:hover { text-decoration: underline; }
+
+.nav-item--current { color: #f25236; }
 
 /* Import pages styling */
 

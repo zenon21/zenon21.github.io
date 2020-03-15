@@ -1,5 +1,4 @@
-p,
-nav {
+p {
   @include font-face($montserrat, 400, normal, 12px);
 }
 
@@ -8,6 +7,8 @@ h1 {
   color: $dusk-purple;
 }
 
-a:hover {
+/* only for links in paragraphs */
+p a:hover {
   color: $tangerine;
+  font-style: italic;
 }

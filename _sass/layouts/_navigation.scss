@@ -1,3 +1,17 @@
-.current {
+.navbar {
+  @include font-face($montserrat, 400, normal, 15px);
+}
+
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.nav-item--current {
   color: $tangerine;
 }
