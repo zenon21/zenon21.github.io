@@ -1,10 +1,16 @@
-.current { color: red; }
-
+/* Main contains all _sass subdirectory imports */
+/* Import all abstracts e.g. fonts, color variables */
+/* contains all abstract imports e.g. fonts, color variables, etc. */
+@import url("https://fonts.googleapis.com/css?family=Domine:700|Lato:400,400i&display=swap");
+/* fonts */
+/* colors */
+/* Import all base styles e.g. global styles */
+/* Import all base .scss files */
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /* What follows is the result of much research on cross-browser styling. Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
 /* ========================================================================== Base styles: opinionated defaults ========================================================================== */
-html { color: #222; font-family: neue-haas-grotesk-display, sans-serif; font-weight: 200; font-style: normal; font-size: 1em; line-height: 1.4; }
+html { color: #222; font-size: 1em; line-height: 1.4; }
 
 /* Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301 Vendor-prefixed and regular ::selection selectors cannot be combined: https://stackoverflow.com/a/16982510/7133471 Customize the background color to match your design. */
 ::-moz-selection { background: #b3d4fc; text-shadow: none; }
@@ -173,5 +179,11 @@ template { display: none; }
 
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
+
+/* Import all layouts e.g. header, nav */
+/* Import all layouts */
+.current { color: #f25236; }
+
+/* Import pages styling */
 
 /*# sourceMappingURL=styles.css.map */
