@@ -1,7 +1,7 @@
 /* Main contains all _sass subdirectory imports */
 /* Import all abstracts e.g. fonts, color variables */
 /* contains all abstract imports e.g. fonts, color variables, etc. */
-@import url("https://fonts.googleapis.com/css?family=Domine:700|Lato:400,400i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i|Montserrat:400,400i&display=swap&subset=latin-ext");
 /* fonts */
 /* colors */
 /* Import all base styles e.g. global styles */
@@ -179,6 +179,12 @@ template { display: none; }
 
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
+
+p, nav { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; }
+
+h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-style: normal; font-size: 54px; color: #515e85; }
+
+a:hover { color: #f25236; }
 
 /* Import all layouts e.g. header, nav */
 /* Import all layouts */

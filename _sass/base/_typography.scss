@@ -1,0 +1,13 @@
+p,
+nav {
+  @include font-face($montserrat, 400, normal, 12px);
+}
+
+h1 {
+  @include font-face($cormorant-garamond, 400, normal, 54px);
+  color: $dusk-purple;
+}
+
+a:hover {
+  color: $tangerine;
+}
