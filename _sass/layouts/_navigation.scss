@@ -6,12 +6,22 @@
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 12px;
-}
 
-.nav-item:hover {
-  text-decoration: underline;
+  &:visited {
+    color: $near-black;
+  }
+
+  &:hover {
+    color: $dark-grey;
+  }
 }
 
 .nav-item--current {
   color: $tangerine;
+  cursor: default;
+  pointer-events: none;
+
+  &:visited {
+    color: $tangerine;
+  }
 }

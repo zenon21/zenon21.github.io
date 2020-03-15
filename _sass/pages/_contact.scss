@@ -1,0 +1,13 @@
+.link {
+  color: black;
+
+  &:visited {
+    color: $near-black;
+  }
+  &:hover {
+    color: $tangerine;
+  }
+  &:active {
+    color: $rust;
+  }
+}

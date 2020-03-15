@@ -182,7 +182,7 @@ template { display: none; }
 
 p { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; font-size: 12px; }
 
-h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-style: normal; font-size: 54px; color: #515e85; }
+h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-style: normal; font-size: 54px; color: #551a8b; }
 
 /* only for links in paragraphs */
 p a:hover { color: #f25236; font-style: italic; }
@@ -199,10 +199,20 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 .nav-item { text-decoration: none; text-transform: uppercase; margin-right: 12px; }
 
-.nav-item:hover { text-decoration: underline; }
+.nav-item:visited { color: #222222; }
 
-.nav-item--current { color: #f25236; }
+.nav-item:hover { color: #535353; }
+
+.nav-item--current { color: #f25236; cursor: default; pointer-events: none; }
+
+.nav-item--current:visited { color: #f25236; }
 
 /* Import pages styling */
+/* Imports styling for individual pages */
+.link { color: black; }
 
-/*# sourceMappingURL=styles.css.map */
+.link:visited { color: #222222; }
+
+.link:hover { color: #f25236; }
+
+.link:active { color: #a7220b; }
