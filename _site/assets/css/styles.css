@@ -146,7 +146,9 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 /* Import pages styling */
 /* Imports styling for individual pages */
-.contact-links { display: flex; justify-content: space-around; }
+.contact-links { display: flex; justify-content: center; margin-top: 2em; }
+
+.icon { font-size: 3em; }
 
 .link { text-decoration: none; }
 

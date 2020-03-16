@@ -1,6 +1,11 @@
 .contact-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.icon {
+  font-size: 3em;
 }
 
 .link {
