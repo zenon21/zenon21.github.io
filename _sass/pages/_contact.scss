@@ -1,5 +1,10 @@
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+}
+
 .link {
-  color: black;
+  text-decoration: none;
 
   &:visited {
     color: $near-black;

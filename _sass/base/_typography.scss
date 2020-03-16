@@ -1,10 +1,11 @@
-p {
-  @include font-face($montserrat, 400, normal, 12px);
+p,
+div {
+  @include font-face($montserrat, 400, normal);
+  font-size: 12px;
 }
 
 h1 {
-  @include font-face($cormorant-garamond, 400, normal, 54px);
-  color: $dusk-purple;
+  @include font-face($cormorant-garamond, 400, normal);
 }
 
 /* only for links in paragraphs */

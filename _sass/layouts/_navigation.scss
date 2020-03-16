@@ -1,5 +1,6 @@
 .navbar {
-  @include font-face($montserrat, 400, normal, 15px);
+  @include font-face($montserrat, 400, normal);
+  font-size: 15px;
 }
 
 .nav-item {

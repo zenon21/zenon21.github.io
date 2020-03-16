@@ -11,3 +11,6 @@
 
 /* Import pages styling */
 @import 'pages/__pages-dir';
+
+/* Import outside defined css e.g. font-awesome, boilerplate css, etc. */
+@import 'vendors/__vendors-dir';
