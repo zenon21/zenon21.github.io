@@ -4,17 +4,9 @@ title: Contact
 ---
 
 <div class="contact-links">
-  <a
-    class="link"
-    href="https://www.linkedin.com/in/catehernandez/"
-    target="_blank"
-  >
-    <i class="icon icon-linkedin"></i>
+  {% for item in site.data.contact-links %}
+  <a class="link" href="{{ item.link }}" target="_blank">
+    <i class="icon {{ item.icon }}" aria-label="{{ item.caption }}"></i>
   </a>
-  <a class="link" href="https://github.com/zenon21/" target="_blank">
-    <i class="icon icon-github"></i>
-  </a>
-  <a class="link" href="https://twitter.com/cate_hernandez" target="_blank">
-    <i class="icon icon-twitter"></i>
-  </a>
+  {% endfor %}
 </div>
