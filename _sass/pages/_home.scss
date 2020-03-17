@@ -1,4 +1,4 @@
-.abt-content {
+.about--content {
   & a {
     color: $tangerine;
     text-decoration: none;
@@ -13,11 +13,25 @@
   }
 }
 
-.about-link {
+.about--link {
   text-align: right;
 }
 
-.toggle-about {
+/*------------------------------------*\
+Pertaining to the about-toggle function
+\*------------------------------------*/
+
+//Opacity must be specified for fade effect
+#about-me {
+  opacity: 1; //defaults to showing element
+}
+
+#about-site {
+  display: none; //default to hiding element
+  opacity: 0;
+}
+
+.about--toggle {
   color: $tangerine;
   text-decoration: none;
 
@@ -25,10 +39,3 @@
     font-style: italic;
   }
 }
-
-/* only for links the paragraph 
-p a:hover {
-  color: $tangerine;
-  font-style: italic;
-  text-decoration: none;
-} */

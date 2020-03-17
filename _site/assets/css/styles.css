@@ -155,19 +155,25 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 .link:active { color: #a7220b; }
 
-.abt-content a { color: #f25236; text-decoration: none; }
+.about--content a { color: #f25236; text-decoration: none; }
 
-.abt-content a:visited { color: #f25236; }
+.about--content a:visited { color: #f25236; }
 
-.abt-content a:hover { color: #a7220b; }
+.about--content a:hover { color: #a7220b; }
 
-.about-link { text-align: right; }
+.about--link { text-align: right; }
 
-.toggle-about { color: #f25236; text-decoration: none; }
+/*------------------------------------*\
+Pertaining to the about-toggle function
+\*------------------------------------*/
+#about-me { opacity: 1; }
 
-.toggle-about:hover { font-style: italic; }
+#about-site { display: none; opacity: 0; }
 
-/* only for links the paragraph  p a:hover { color: $tangerine; font-style: italic; text-decoration: none; } */
+.about--toggle { color: #f25236; text-decoration: none; }
+
+.about--toggle:hover { font-style: italic; }
+
 /* Import outside defined css e.g. font-awesome, boilerplate css, etc. */
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */

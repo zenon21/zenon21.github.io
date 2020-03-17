@@ -3,17 +3,17 @@ title: Cate Hernandez - Full stack dev
 layout: default
 ---
 
-<div id="about-me">
-  <p class="abt-content">
+<div id="about-me" className="about">
+  <p class="about--content">
     Hi! My name is Cate. I'm a full-stack developer with plenty of school
     experience working in Java and C. In the past few years, I've also picked up
     Python, React, and a little bit of Node.js. I'm pretty good with HTML and
     CSS too.
   </p>
 
-  <div class="about-link">
+  <div class="about--link">
     <a
-      class="toggle-about"
+      class="about--toggle"
       href="#"
       onClick="toggleElements('about-me', 'about-site')"
       >about this site</a
@@ -21,15 +21,15 @@ layout: default
   </div>
 </div>
 
-<div id="about-site" style="display:none">
-  <p class="abt-content">
+<div id="about-site" className="about">
+  <p class="about--content">
     This site was built with Jekyll & deployed on GitHub pages. I built the UI
     from scratch. You can see the source code <a href="">here</a>.
   </p>
 
-  <div class="about-link">
+  <div class="about--link">
     <a
-      class="toggle-about"
+      class="about--toggle"
       href="#"
       onClick="toggleElements('about-site', 'about-me')"
       >about me</a
