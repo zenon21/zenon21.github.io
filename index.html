@@ -15,7 +15,7 @@ layout: default
   </div>
 </div>
 
-<div id="about-site">
+<div id="about-site" style="display:none">
   <p class="abt-content">
     This site was built with Jekyll & deployed on GitHub pages.
   </p>
@@ -27,8 +27,19 @@ layout: default
 
 <!-- for testing only. Move to JS file later-->
 <script>
-  const toggleAbout = () => {
-    console.log('Toggled');
+  toggleAbout = () => {
+    let aboutMe = document.getElementById('about-me');
+    let aboutSite = document.getElementById('about-site');
+
+    //about-me is hidden
+    if (aboutMe.style.display === 'none') {
+      aboutMe.style.display = 'block';
+      aboutSite.style.display = 'none';
+    } else {
+      //about-site is hidden
+      aboutMe.style.display = 'none';
+      aboutSite.style.display = 'block';
+    }
   };
 </script>
 <!--
