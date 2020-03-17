@@ -143,15 +143,15 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 /* Import pages styling */
 /* Imports styling for individual pages */
-.contact-links { display: flex; justify-content: center; margin-top: 2em; }
+.contact-links { display: grid; justify-content: center; grid-auto-flow: column; grid-column-gap: 15px; margin-top: 2em; }
 
 .icon { font-size: 3em; }
 
-.link { text-decoration: none; }
+.link { color: #f25236; text-decoration: none; transition: 0.5s ease; }
 
-.link:visited { color: #222222; }
+.link:visited { color: #f25236; }
 
-.link:hover { color: #f25236; }
+.link:hover { transform: scale(1.3); }
 
 .link:active { color: #a7220b; }
 

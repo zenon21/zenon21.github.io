@@ -1,6 +1,8 @@
 .contact-links {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-auto-flow: column;
+  grid-column-gap: 15px;
   margin-top: 2em;
 }
 
@@ -9,13 +11,15 @@
 }
 
 .link {
+  color: $tangerine;
   text-decoration: none;
+  transition: 0.5s ease;
 
   &:visited {
-    color: $near-black;
+    color: $tangerine;
   }
   &:hover {
-    color: $tangerine;
+    transform: scale(1.3);
   }
   &:active {
     color: $rust;
