@@ -3,3 +3,22 @@
   font-weight: $weight;
   font-style: $style;
 }
+
+//Underlines link on hover effect
+//@param {Color} $color
+@mixin animated-hover-underline($color) {
+  //animate link underline on hover
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 1.5px solid $color;
+    transition: 1s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

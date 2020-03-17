@@ -155,13 +155,13 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 .link:active { color: #a7220b; }
 
-.about a { color: #f25236; position: relative; text-decoration: none; }
+.about a { color: #f25236; position: relative !important; text-decoration: none; }
 
 .about a:visited { color: #f25236; }
 
-.about a:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; border-bottom: 1.5px solid #f25236; transition: 1s; }
+.about a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; border-bottom: 1.5px solid #f25236; transition: 1s; }
 
-.about a:hover:after { width: 100%; }
+.about a:hover::after { width: 100%; }
 
 .toggle-about--container { text-align: right; }
 

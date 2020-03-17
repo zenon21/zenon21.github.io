@@ -1,27 +1,14 @@
 .about {
   a {
     color: $tangerine;
-    position: relative;
+    position: relative !important; //required for hover animation
     text-decoration: none;
 
     &:visited {
       color: $tangerine;
     }
 
-    //animate link underline on hover
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      border-bottom: 1.5px solid $tangerine;
-      transition: 1s;
-    }
-
-    &:hover:after {
-      width: 100%;
-    }
+    @include animated-hover-underline($tangerine);
   }
 }
 
