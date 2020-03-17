@@ -34,36 +34,3 @@ layout: default
     >
   </div>
 </div>
-
-<!-- for testing only. Move to JS file later-->
-<script>
-  /* @param {String} elementID - ID of element*/
-  hideElement = elementID => {
-    let element = document.getElementById(elementID);
-
-    element.style.display = 'none';
-  };
-
-  /* @param {String} element - ID of element
-   * @param {String} element - display style. Defaults to 'block'
-   */
-  showElement = (elementID, displayStyle = 'block') => {
-    let element = document.getElementById(elementID);
-
-    element.style.display = displayStyle;
-  };
-
-  /* @param {String} elem1ID - ID of element to be hidden
-   * @param {String} elem2ID - ID of element to be revealed
-   * @param {String} displayStyle - display style; defualts to 'block'
-   */
-  toggleElements = (elem1ID, elem2ID, displayStyle = 'block') => {
-    hideElement(elem1ID);
-    showElement(elem2ID, displayStyle);
-  };
-</script>
-<!--
-You can use HTML elements in Markdown, such as the comment element, and they won't
-be affected by a markdown parser. However, if you create an HTML element in your
-markdown file, you cannot use markdown syntax within that element's contents.
--->
