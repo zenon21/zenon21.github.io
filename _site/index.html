@@ -43,7 +43,12 @@
   </p>
 
   <div class="about-link">
-    <a class="toggle-about" href="#" onClick="toggleAbout()">about this site</a>
+    <a
+      class="toggle-about"
+      href="#"
+      onClick="toggleElements('about-me', 'about-site')"
+      >about this site</a
+    >
   </div>
 </div>
 
@@ -53,25 +58,40 @@
   </p>
 
   <div class="about-link">
-    <a class="toggle-about" href="#" onClick="toggleAbout()">about this site</a>
+    <a
+      class="toggle-about"
+      href="#"
+      onClick="toggleElements('about-site', 'about-me')"
+      >about this site</a
+    >
   </div>
 </div>
 
 <!-- for testing only. Move to JS file later-->
 <script>
-  toggleAbout = () => {
-    let aboutMe = document.getElementById('about-me');
-    let aboutSite = document.getElementById('about-site');
+  /* @param {String} elementID - ID of element*/
+  hideElement = elementID => {
+    let element = document.getElementById(elementID);
 
-    //about-me is hidden
-    if (aboutMe.style.display === 'none') {
-      aboutMe.style.display = 'block';
-      aboutSite.style.display = 'none';
-    } else {
-      //about-site is hidden
-      aboutMe.style.display = 'none';
-      aboutSite.style.display = 'block';
-    }
+    element.style.display = 'none';
+  };
+
+  /* @param {String} element - ID of element
+   * @param {String} element - display style. Defaults to 'block'
+   */
+  showElement = (elementID, displayStyle = 'block') => {
+    let element = document.getElementById(elementID);
+
+    element.style.display = displayStyle;
+  };
+
+  /* @param {String} elem1ID - ID of element to be hidden
+   * @param {String} elem2ID - ID of element to be revealed
+   * @param {String} displayStyle - display style; defualts to 'block'
+   */
+  toggleElements = (elem1ID, elem2ID, displayStyle = 'block') => {
+    hideElement(elem1ID);
+    showElement(elem2ID, displayStyle);
   };
 </script>
 <!--
