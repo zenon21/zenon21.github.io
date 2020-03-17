@@ -1,0 +1,19 @@
+.about-link {
+  text-align: right;
+}
+
+.toggle-about {
+  color: $tangerine;
+  text-decoration: none;
+
+  &:hover {
+    font-style: italic;
+  }
+}
+
+/* only for links the paragraph 
+p a:hover {
+  color: $tangerine;
+  font-style: italic;
+  text-decoration: none;
+} */

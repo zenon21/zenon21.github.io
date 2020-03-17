@@ -7,9 +7,3 @@ div {
 h1 {
   @include font-face($cormorant-garamond, 400, normal);
 }
-
-/* only for links in paragraphs */
-p a:hover {
-  color: $tangerine;
-  font-style: italic;
-}

@@ -35,10 +35,34 @@
   </a>
   
 </nav>
- <p>
-  Content is written in [Markdown](https://learnxinyminutes.com/docs/markdown/).
-  Plain text format allows you to focus on your **content**.
-</p>
+ <div id="about-me">
+  <p class="abt-content">
+    Content is written in
+    [Markdown](https://learnxinyminutes.com/docs/markdown/). Plain text format
+    allows you to focus on your **content**.
+  </p>
+
+  <div class="about-link">
+    <a class="toggle-about" href="#" onClick="toggleAbout()">about this site</a>
+  </div>
+</div>
+
+<div id="about-site">
+  <p class="abt-content">
+    This site was built with Jekyll & deployed on GitHub pages.
+  </p>
+
+  <div class="about-link">
+    <a class="toggle-about" href="#" onClick="toggleAbout()">about this site</a>
+  </div>
+</div>
+
+<!-- for testing only. Move to JS file later-->
+<script>
+  const toggleAbout = () => {
+    console.log('Toggled');
+  };
+</script>
 <!--
 You can use HTML elements in Markdown, such as the comment element, and they won't
 be affected by a markdown parser. However, if you create an HTML element in your

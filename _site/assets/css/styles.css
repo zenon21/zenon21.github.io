@@ -119,9 +119,6 @@ p, div { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: no
 
 h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-style: normal; }
 
-/* only for links in paragraphs */
-p a:hover { color: #f25236; font-style: italic; }
-
 /* Import all layouts e.g. header, nav */
 /* Import styling for _layouts files & _includes files */
 html { height: 100%; }
@@ -130,7 +127,7 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 .outer-container { width: 50vw; }
 
-.site-title { color: #551a8b; text-transform: uppercase; font-size: 36px; /* override normalize h1 styling */ margin-bottom: 0.25em; }
+.site-title { color: #4b4e6d; text-transform: uppercase; font-size: 36px; /* override normalize h1 styling */ margin-bottom: 0.25em; }
 
 .navbar { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: normal; font-size: 15px; }
 
@@ -158,6 +155,13 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 .link:active { color: #a7220b; }
 
+.about-link { text-align: right; }
+
+.toggle-about { color: #f25236; text-decoration: none; }
+
+.toggle-about:hover { font-style: italic; }
+
+/* only for links the paragraph  p a:hover { color: $tangerine; font-style: italic; text-decoration: none; } */
 /* Import outside defined css e.g. font-awesome, boilerplate css, etc. */
 /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
