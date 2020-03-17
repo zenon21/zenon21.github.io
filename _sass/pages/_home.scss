@@ -13,12 +13,21 @@
   }
 }
 
-.about--link {
+.toggle-about--container {
   text-align: right;
 }
 
+.toggle-about--link {
+  color: $tangerine;
+  text-decoration: none;
+
+  &:hover {
+    font-style: italic;
+  }
+}
+
 /*------------------------------------*\
-Pertaining to the about--toggle function
+Pertaining to the toggled about animation
 \*------------------------------------*/
 
 @keyframes fadeIn {
@@ -41,13 +50,4 @@ Pertaining to the about--toggle function
 
 #about-site {
   display: none; //default to hiding element
-}
-
-.about--toggle {
-  color: $tangerine;
-  text-decoration: none;
-
-  &:hover {
-    font-style: italic;
-  }
 }
