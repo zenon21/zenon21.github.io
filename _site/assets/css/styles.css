@@ -155,17 +155,15 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 .link:active { color: #a7220b; }
 
-.about--content a { color: #f25236; text-decoration: none; }
+.about a { color: #f25236; position: relative; text-decoration: none; }
 
-.about--content a:visited { color: #f25236; }
+.about a:visited { color: #f25236; }
 
-.about--content a:hover { color: #a7220b; }
+.about a:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0%; border-bottom: 1.5px solid #f25236; transition: 1s; }
+
+.about a:hover:after { width: 100%; }
 
 .toggle-about--container { text-align: right; }
-
-.toggle-about--link { color: #f25236; text-decoration: none; }
-
-.toggle-about--link:hover { font-style: italic; }
 
 /*------------------------------------*\
 Pertaining to the toggled about animation
@@ -243,5 +241,3 @@ textarea { resize: vertical; }
   tr, img { page-break-inside: avoid; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
-
-/*# sourceMappingURL=styles.css.map */
