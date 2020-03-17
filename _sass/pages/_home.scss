@@ -1,3 +1,18 @@
+.abt-content {
+  & a {
+    color: $tangerine;
+    text-decoration: none;
+
+    &:visited {
+      color: $tangerine;
+    }
+
+    &:hover {
+      color: $rust;
+    }
+  }
+}
+
 .about-link {
   text-align: right;
 }
