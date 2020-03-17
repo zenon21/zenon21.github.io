@@ -18,17 +18,29 @@
 }
 
 /*------------------------------------*\
-Pertaining to the about-toggle function
+Pertaining to the about--toggle function
 \*------------------------------------*/
 
-//Opacity must be specified for fade effect
-#about-me {
-  opacity: 1; //defaults to showing element
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 #about-site {
   display: none; //default to hiding element
-  opacity: 0;
 }
 
 .about--toggle {

@@ -164,11 +164,15 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 .about--link { text-align: right; }
 
 /*------------------------------------*\
-Pertaining to the about-toggle function
+Pertaining to the about--toggle function
 \*------------------------------------*/
-#about-me { opacity: 1; }
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
 
-#about-site { display: none; opacity: 0; }
+@keyframes fadeOut { from { opacity: 1; }
+  to { opacity: 0; } }
+
+#about-site { display: none; }
 
 .about--toggle { color: #f25236; text-decoration: none; }
 

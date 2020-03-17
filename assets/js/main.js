@@ -2,8 +2,8 @@
 hideElement = elementID => {
   let element = document.getElementById(elementID);
 
+  element.style.animation = 'fadeOut 1s';
   element.style.display = 'none';
-  element.style.opacity = 0;
 };
 
 /* @param {String} element - ID of element
@@ -12,8 +12,8 @@ hideElement = elementID => {
 showElement = (elementID, displayStyle = 'block') => {
   let element = document.getElementById(elementID);
 
+  element.style.animation = 'fadeIn 1s';
   element.style.display = displayStyle;
-  element.style.opacity = 1;
 };
 
 /* @param {String} elem1ID - ID of element to be hidden
