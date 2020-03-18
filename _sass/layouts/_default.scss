@@ -9,5 +9,9 @@ body {
 }
 
 .outer-container {
-  width: 50vw;
+  width: 80vw;
+
+  @include respond-to('large') {
+    width: 50vw;
+  }
 }
