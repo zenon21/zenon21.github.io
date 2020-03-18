@@ -1,8 +1,9 @@
 .contact-links {
+  animation: 1s ease fadeIn;
   display: grid;
-  justify-content: center;
   grid-auto-flow: column;
   grid-column-gap: 15px;
+  justify-content: center;
   margin-top: 2em;
 }
 

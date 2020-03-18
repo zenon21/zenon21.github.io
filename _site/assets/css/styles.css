@@ -150,7 +150,7 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 
 /* Import pages styling */
 /* Imports styling for individual pages */
-.contact-links { display: grid; justify-content: center; grid-auto-flow: column; grid-column-gap: 15px; margin-top: 2em; }
+.contact-links { animation: 1s ease fadeIn; display: grid; grid-auto-flow: column; grid-column-gap: 15px; justify-content: center; margin-top: 2em; }
 
 .icon { font-size: 3em; }
 
@@ -161,6 +161,8 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 .link:hover { transform: scale(1.3); }
 
 .link:active { color: #a7220b; }
+
+.about { animation: 1s ease fadeIn; }
 
 .about a { color: #f25236; position: relative !important; text-decoration: none; }
 

@@ -1,4 +1,6 @@
 .about {
+  animation: 1s ease fadeIn;
+
   a {
     color: $tangerine;
     position: relative !important; //required for hover animation

@@ -5,7 +5,7 @@
 removeElementWithFade = (elementID, duration = '1s') => {
   let element = document.getElementById(elementID);
 
-  element.style.animation = `fadeOut ${duration} ease-in`;
+  element.style.animation = `fadeOut ${duration} ease`;
   element.style.display = 'none';
 };
 
@@ -17,7 +17,7 @@ removeElementWithFade = (elementID, duration = '1s') => {
 fadeInElement = (elementID, displayStyle = 'block', duration = '1s') => {
   let element = document.getElementById(elementID);
 
-  element.style.animation = `fadeIn ${duration} ease-in`;
+  element.style.animation = `fadeIn ${duration} ease`;
   element.style.display = displayStyle;
 };
 
