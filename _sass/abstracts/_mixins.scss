@@ -4,8 +4,9 @@
   font-style: $style;
 }
 
-//Underlines link on hover effect
-//@param {Color} $color
+/// Underlines link on hover effect
+/// @author Rene Spronk
+/// @param {String} $color
 @mixin animated-hover-underline($color) {
   //animate link underline on hover
   &::after {
