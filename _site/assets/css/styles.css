@@ -119,6 +119,13 @@ p, div { font-family: "Montserrat", sans-serif; font-weight: 400; font-style: no
 
 h1 { font-family: "Cormorant Garamond", serif; font-weight: 400; font-style: normal; }
 
+/* Often-used animations */
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@keyframes fadeOut { from { opacity: 1; }
+  to { opacity: 0; } }
+
 /* Import all layouts e.g. header, nav */
 /* Import styling for _layouts files & _includes files */
 html { height: 100%; }
@@ -168,12 +175,6 @@ body { height: 100vh; /* always 100% height of viewport */ display: flex; justif
 /*------------------------------------*\
 Pertaining to the toggled about animation
 \*------------------------------------*/
-@keyframes fadeIn { from { opacity: 0; }
-  to { opacity: 1; } }
-
-@keyframes fadeOut { from { opacity: 1; }
-  to { opacity: 0; } }
-
 #about-site { display: none; }
 
 /* Import outside defined css e.g. font-awesome, boilerplate css, etc. */
@@ -241,3 +242,5 @@ textarea { resize: vertical; }
   tr, img { page-break-inside: avoid; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
+
+/*# sourceMappingURL=styles.css.map */
