@@ -26,6 +26,6 @@ fadeInElement = (elementID, displayStyle = 'block', duration = '1s') => {
  * @param {String} displayStyle - display style; defualts to 'block'
  */
 toggleElements = (elem1ID, elem2ID, displayStyle = 'block') => {
-  removeElementWithFade(elem1ID);
-  fadeInElement(elem2ID, displayStyle);
+  removeElementWithFade(elem1ID, '1.2s');
+  fadeInElement(elem2ID, displayStyle, '1.2s');
 };
