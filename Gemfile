@@ -4,6 +4,9 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
+# will install all gh-pages allowed gems
+# see : https://pages.github.com/versions/
+gem "github-pages", "~> 204", group: :jekyll_plugins
 
-gem "jekyll", "~> 4.0"
+# comment out all other gems
+#gem "jekyll", "~> 4.0"
