@@ -3,7 +3,17 @@
   font-size: 15px;
 }
 
-.primary-nav__item {
+/* Remove default list styling */
+.site-nav {
+  list-style-type: none;
+}
+
+.site-nav__item {
+  display: inline;
+}
+
+/* Style individual links */
+.site-nav__link {
   color: $near-black;
   text-decoration: none;
   text-transform: uppercase;
@@ -12,9 +22,22 @@
   &:visited {
     color: $near-black;
   }
+
+  /* Styling for specific links*/
+  &--about-site {
+    @include underline-link($light-blue);
+  }
+
+  &--contact {
+    @include underline-link($tangerine);
+  }
+
+  &--home {
+    @include underline-link($yellow);
+  }
 }
 
-.primary-nav__item--current {
+.site-nav__item--current {
   color: $tangerine;
   cursor: default;
   pointer-events: none;

@@ -4,6 +4,10 @@
   font-style: $style;
 }
 
+@mixin underline-link($color) {
+  border-bottom: 1.5px solid $color;
+}
+
 /// Underlines link on hover effect
 /// @author Rene Spronk
 /// @param {String} $color

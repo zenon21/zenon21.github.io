@@ -1,6 +1,9 @@
-- name: About Me
-  link: ./
 - name: About Site
   link: '#about-site'
+  modifier: 'about-site'
 - name: Contact
   link: '#contact'
+  modifier: 'contact'
+- name: Home
+  link: ./
+  modifier: 'home'
