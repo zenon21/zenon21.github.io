@@ -13,15 +13,3 @@
     @include animated-hover-underline($tangerine);
   }
 }
-
-.toggle-about--container {
-  text-align: right;
-}
-
-/*------------------------------------*\
-Pertaining to the toggled about animation
-\*------------------------------------*/
-
-#about-site {
-  display: none; //default to hiding element
-}
