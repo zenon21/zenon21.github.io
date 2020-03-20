@@ -4,8 +4,10 @@
   font-style: $style;
 }
 
-@mixin underline-link($color) {
-  border-bottom: 1.5px solid $color;
+/// Underline link. Predefined thickeness for consitency
+/// @param {Array} $color
+@mixin thick-underline($color) {
+  border-bottom: 4px solid $color;
 }
 
 /// Underlines link on hover effect

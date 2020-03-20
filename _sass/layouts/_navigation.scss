@@ -25,15 +25,15 @@
 
   /* Styling for specific links*/
   &--about-site {
-    @include underline-link($light-blue);
+    @include thick-underline($light-blue);
   }
 
   &--contact {
-    @include underline-link($tangerine);
+    @include thick-underline($tangerine);
   }
 
   &--home {
-    @include underline-link($yellow);
+    @include thick-underline($yellow);
   }
 }
 
