@@ -27,10 +27,8 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="outer-container">
-      <header class="site-header">{% include header.html %}</header>
-      {% include navigation.html %}
-      <main>{{ content }}</main>
-    </div>
+    <header class="site-header">{% include header.html %}</header>
+    <nav class="primary-nav">{% include site-nav.html %}</nav>
+    <main>{{ content }}</main>
   </body>
 </html>

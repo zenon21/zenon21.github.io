@@ -4,14 +4,15 @@ html {
 
 body {
   height: 100vh; /* always 100% height of viewport */
+}
+
+.primary-nav {
+  @include font-face($montserrat, 400, normal);
+  font-size: 15px;
+}
+
+/*
+.primary-nav {
   display: flex;
-  justify-content: center;
-}
-
-.outer-container {
-  width: 80vw;
-
-  @include respond-to('large') {
-    width: 50vw;
-  }
-}
+  justify-content: flex-end;
+}*/

@@ -1,11 +1,8 @@
-.primary-nav {
-  @include font-face($montserrat, 400, normal);
-  font-size: 15px;
-}
-
 /* Remove default list styling */
 .site-nav {
   list-style-type: none;
+  padding: 0;
+  //transform: rotate(-90deg);
 }
 
 .site-nav__item {
