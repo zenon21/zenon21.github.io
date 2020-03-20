@@ -5,5 +5,5 @@ div {
 }
 
 h1 {
-  @include font-face($cormorant-garamond, 400, normal);
+  @include font-face($playfair-display, 400, normal);
 }
