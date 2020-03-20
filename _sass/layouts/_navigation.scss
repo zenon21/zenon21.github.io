@@ -1,9 +1,9 @@
-.navbar {
+.primary-nav {
   @include font-face($montserrat, 400, normal);
   font-size: 15px;
 }
 
-.nav-item {
+.primary-nav__item {
   color: $near-black;
   text-decoration: none;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
   }
 }
 
-.nav-item--current {
+.primary-nav__item--current {
   color: $tangerine;
   cursor: default;
   pointer-events: none;
