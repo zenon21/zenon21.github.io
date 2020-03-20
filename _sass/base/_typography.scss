@@ -7,3 +7,8 @@ div {
 h1 {
   @include font-face($playfair-display, 400, normal);
 }
+
+.primary-nav {
+  @include font-face($montserrat, 400, normal);
+  font-size: 15px;
+}
