@@ -1,15 +1,13 @@
 <!--Nested list within the main nav element-->
-<nav class="primary-nav">
-  <ul class="site-nav">
-    {% for item in site.data.site-nav-links %}
-    <li class="site-nav__item">
-      <a
-        href="{{ item.link }}"
-        class="site-nav__link site-nav__link--{{ item.modifier }}"
-      >
-        {{ item.name }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</nav>
+<ul class="site-nav">
+  {% for item in site.data.site-nav-links %}
+  <li class="site-nav__item">
+    <a
+      href="{{ item.link }}"
+      class="site-nav__link site-nav__link--{{ item.modifier }}"
+    >
+      {{ item.name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
