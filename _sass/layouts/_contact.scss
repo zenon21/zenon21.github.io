@@ -1,3 +1,33 @@
+/** Social Links **/
+.contact-links {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 10px;
+}
+
+.contact-links__bubble {
+  background-color: $tangerine;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-links__icon {
+  color: $cream;
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  &:visited {
+    color: $cream;
+  }
+}
+
+/*
 .contact-links {
   animation: 1s ease fadeIn;
   display: grid;
@@ -22,4 +52,4 @@
   &:hover {
     transform: scale(1.3);
   }
-}
+}*/

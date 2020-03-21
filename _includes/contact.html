@@ -1,7 +1,10 @@
-<div class="contact-links">
+<ul class="contact-links">
   {% for item in site.data.contact-links %}
-  <a class="link" href="{{ item.link }}" target="_blank">
-    <i class="icon {{ item.icon }}" aria-label="{{ item.caption }}"></i>
-  </a>
+  <li class="contact-links__item">
+    <span class="contact-links__bubble">
+      <a class="contact-links__link" href="{{ item.link }}" target="_blank">
+        <i class="contact-links__icon {{ item.icon }}" aria-label="{{ item.caption }}"></i>
+      </a>
+    </span>
   {% endfor %}
 </div>
