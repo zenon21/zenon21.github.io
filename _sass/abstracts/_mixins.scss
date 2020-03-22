@@ -30,10 +30,12 @@
   }
 }
 
+/* Breakpoints follow bootstrap 4 */
 $breakpoints: (
-  'small': 767px,
-  'medium': 992px,
-  'large': 1200px
+  'small': 576px,
+  'medium': 767px,
+  'large': 992px,
+  'x-large': 1200px
 ) !default;
 
 /// Mixin to manage responsive breakpoints

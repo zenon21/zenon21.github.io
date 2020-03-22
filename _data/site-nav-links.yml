@@ -5,5 +5,5 @@
   link: '#contact'
   modifier: 'contact'
 - name: Home
-  link: ./
+  link: '#'
   modifier: 'home'
