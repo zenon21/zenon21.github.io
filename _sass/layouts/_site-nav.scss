@@ -22,6 +22,12 @@
     color: $near-black;
   }
 
+  &:hover {
+    position: relative;
+    padding-bottom: 4px;
+    top: -4px;
+  }
+
   /* Styling for specific links*/
   &--about-site {
     @include thick-underline($light-blue);
