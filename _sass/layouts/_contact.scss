@@ -9,6 +9,14 @@
   width: min-content;
 }
 
+.contact-links__item {
+  transition: 0.25s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .contact-links__bubble {
   background-color: $tangerine;
   height: 44px;
