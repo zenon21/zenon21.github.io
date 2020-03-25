@@ -1,10 +1,12 @@
 /** Social Links **/
 .contact-links {
   list-style-type: none;
-  padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-column-gap: 10px;
+  grid-auto-flow: column;
+  grid-column-gap: 12px;
+  margin-top: 2em;
+  padding: 0;
+  width: min-content;
 }
 
 .contact-links__bubble {
@@ -26,30 +28,3 @@
     color: $cream;
   }
 }
-
-/*
-.contact-links {
-  animation: 1s ease fadeIn;
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 15px;
-  justify-content: center;
-  margin-top: 2em;
-}
-
-.icon {
-  font-size: 3em;
-}
-
-.link {
-  color: $tangerine;
-  text-decoration: none;
-  transition: 0.5s ease;
-
-  &:visited {
-    color: $tangerine;
-  }
-  &:hover {
-    transform: scale(1.3);
-  }
-}*/
