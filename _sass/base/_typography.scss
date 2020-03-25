@@ -11,7 +11,7 @@ body {
 h1 {
   @include font-face($playfair-display, 400, normal);
   text-transform: uppercase;
-  font-size: calc(36px + 5.5vw);
+  font-size: calc(36px + 4.5vw);
 }
 
 .primary-nav {

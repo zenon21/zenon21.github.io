@@ -10,7 +10,7 @@ body {
 
 .site-header {
   @include respond-to('medium') {
-    max-width: 33%;
+    width: min-content;
     margin-top: 15vh;
   }
 }
