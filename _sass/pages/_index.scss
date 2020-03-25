@@ -1,5 +1,7 @@
-.about {
+#about-me,
+#about-site {
   animation: 1s ease fadeIn;
+  line-height: 2em;
 
   a {
     color: $tangerine;
@@ -12,16 +14,17 @@
 
     @include animated-hover-underline($tangerine);
   }
+
+  @include respond-to('large') {
+    width: 85%;
+  }
 }
 
-.toggle-about--container {
+.toggle-about {
+  margin-top: 0.5em;
   text-align: right;
 }
 
-/*------------------------------------*\
-Pertaining to the toggled about animation
-\*------------------------------------*/
-
-#about-site {
-  display: none; //default to hiding element
+.toggle-about__link {
+  text-transform: lowercase;
 }

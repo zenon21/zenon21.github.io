@@ -1,0 +1,48 @@
+.site-nav {
+  // Remove default list styling
+  list-style-type: none;
+  padding: 0;
+  // space elements evenly on grid
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 15px;
+}
+
+/* remove default list styling */
+.site-nav__item {
+  display: inline;
+}
+
+.site-nav__link {
+  color: $near-black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:visited {
+    color: $near-black;
+  }
+
+  &:hover {
+    position: relative;
+    padding-bottom: 4px;
+    top: -4px;
+  }
+
+  /* Styling for specific links*/
+  &--about-site {
+    @include thick-underline($light-blue);
+  }
+
+  &--contact {
+    @include thick-underline($tangerine);
+  }
+
+  &--home {
+    @include thick-underline($yellow);
+  }
+}
+
+.site-nav__item--current {
+  cursor: default;
+  pointer-events: none;
+}

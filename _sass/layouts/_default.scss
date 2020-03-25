@@ -1,17 +1,16 @@
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
-  height: 100vh; /* always 100% height of viewport */
-  display: flex;
-  justify-content: center;
+  margin: 1vw 7vw;
+  background-color: $cream;
 }
 
-.outer-container {
-  width: 80vw;
-
-  @include respond-to('large') {
-    width: 50vw;
+.site-header {
+  @include respond-to('medium') {
+    width: min-content;
+    margin-top: 15vh;
   }
 }

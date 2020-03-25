@@ -1,29 +1,11 @@
 .primary-nav {
-  @include font-face($montserrat, 400, normal);
-  font-size: 15px;
-}
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
 
-.primary-nav__item {
-  color: $near-black;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-right: 12px;
-
-  &:visited {
-    color: $near-black;
-  }
-
-  &:hover {
-    color: $dark-grey;
-  }
-}
-
-.primary-nav__item--current {
-  color: $tangerine;
-  cursor: default;
-  pointer-events: none;
-
-  &:visited {
-    color: $tangerine;
+  /* Position top on larger screens */
+  @include respond-to('medium') {
+    top: 2rem;
+    right: 2rem;
   }
 }
