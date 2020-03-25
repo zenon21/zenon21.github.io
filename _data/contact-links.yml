@@ -1,12 +1,12 @@
 - link: https://www.linkedin.com/in/catehernandez/
   icon: icon-linkedin
-  caption: Add me on LinkedIn
+  label: LinkedIn link
 - link: https://github.com/zenon21/
   icon: icon-github
-  caption: Find me on GitHub
+  label: GitHub link
 - link: https://codepen.io/zenon21
   icon: icon-codepen
-  caption: Follow me on CodePen
+  label: CodePen link
 - link: https://zenon21.blogspot.com/
   icon: icon-blogger
-  caption: Read my blog on Blogger
+  label: Blog link
