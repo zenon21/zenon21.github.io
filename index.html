@@ -4,7 +4,11 @@ layout: default
 ---
 
 <section id="about-me">
-  {% include about-me.html %}
+  <p class="about-me__text">
+    Hi! My name is Cate. I'm a full-stack developer with school experience
+    working in Java and C. In the past few years, I've also picked up Python,
+    React, and a little bit of Node.js. I'm pretty good with HTML and CSS too.
+  </p>
 
   <div class="toggle-about">
     <a class="toggle-about__link" href="javascript:;">About Site</a>
@@ -12,7 +16,19 @@ layout: default
 </section>
 
 <section id="about-site" class="hidden">
-  {% include about-site.html %}
+  <p class="about-site__text">
+    This site was built with Jekyll & deployed on GitHub pages. I built the UI
+    from scratch. You can see the source code on
+    <a href="https://github.com/zenon21/zenon21.github.io" target="_blank"
+      >my GitHub page</a
+    >, and you can read more about how I built it (and what I'm working on next)
+    on
+    <a
+      href="https://zenon21.blogspot.com/search/label/my%20site"
+      target="_blank"
+      >my blog</a
+    >.
+  </p>
   <div class="toggle-about">
     <a class="toggle-about__link" href="javascript:;">About Me</a>
   </div>
