@@ -1,7 +1,15 @@
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   margin: 1vw 7vw;
+}
+
+.site-header {
+  @include respond-to('medium') {
+    max-width: 33%;
+    margin-top: 15vh;
+  }
 }
