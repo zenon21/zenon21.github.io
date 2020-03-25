@@ -6,12 +6,16 @@ layout: default
 <section id="about-me">
   {% include about-me.html %}
 
-  <a class="toggle-about" href="javascript:;">About Site</a>
+  <div class="toggle-about">
+    <a class="toggle-about__link" href="javascript:;">About Site</a>
+  </div>
 </section>
 
 <section id="about-site" class="hidden">
   {% include about-site.html %}
-  <a class="toggle-about" href="javascript:;">About Me</a>
+  <div class="toggle-about">
+    <a class="toggle-about__link" href="javascript:;">About Me</a>
+  </div>
 </section>
 
 <section id="contact">
@@ -19,7 +23,7 @@ layout: default
 </section>
 
 <script>
-  let toggleAboutLinks = document.getElementsByClassName('toggle-about');
+  let toggleAboutLinks = document.getElementsByClassName('toggle-about__link');
 
   for (const link of toggleAboutLinks) {
     link.addEventListener('click', toggleAbouts);
