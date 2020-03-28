@@ -18,6 +18,8 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  @include thick-underline($tangerine);
+
   &:visited {
     color: $near-black;
   }
@@ -29,16 +31,16 @@
   }
 
   /* Styling for specific links*/
-  &--about-site {
-    @include thick-underline($light-blue);
-  }
-
-  &--contact {
+  &--home {
     @include thick-underline($tangerine);
   }
 
-  &--home {
+  &--portfolio {
     @include thick-underline($yellow);
+  }
+
+  &--contact {
+    @include thick-underline($light-blue);
   }
 }
 
