@@ -1,9 +1,6 @@
-#- name: Home
-#  link: '#'
-#  modifier: 'home'
-#- name: Porfolio
-#  link: ''
-#  modifier: 'portfolio'
+- name: Home
+  link: '#top'
+- name: Projects
+  link: '#projects'
 - name: Resume
   link: '/Cate-Hernandez-Resume.pdf'
-  modifier: 'resume'
