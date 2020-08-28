@@ -1,0 +1,9 @@
+{% for item in site.data.projects %}
+<div class="project">
+  <h3 class="project-name">{{ item.project-name }}</h3>
+  <span class="tech-stack">Technologies used: </span>{{ item.project-tech-stack}} </br>
+  {% for item in item.project-description %} 
+    -&nbsp;{{ item in item.project-description.item }} </br>
+  {% endfor %}
+</div>
+{% endfor %}

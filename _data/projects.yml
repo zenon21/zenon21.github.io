@@ -1,0 +1,5 @@
+- project-name: Intueat
+  project-tech-stack: PostgreSQL, Node.js, Express, React, Redux
+  project-description:
+    - Front end in React
+    - Backend in Node
