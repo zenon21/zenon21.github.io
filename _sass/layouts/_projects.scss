@@ -2,6 +2,11 @@
   min-height: 100vh;
 }
 
+.project {
+  display: flex;
+  gap: 150px;
+}
+
 .project__name {
   margin-bottom: 0.5rem;
 }
@@ -11,6 +16,11 @@
   list-style: none;
   margin: 0.5rem 0;
   padding: 0;
+}
+
+.project__img {
+  object-fit: contain;
+  width: 440px;
 }
 
 .tech-stack {

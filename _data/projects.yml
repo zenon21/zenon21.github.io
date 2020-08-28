@@ -1,4 +1,5 @@
 - project-name: Intueat
+  project-img: /assets/img/intueat-dashboard.png
   project-tech-stack: PostgreSQL, Node.js, Express, React, Redux
   project-description:
     - Front end in React

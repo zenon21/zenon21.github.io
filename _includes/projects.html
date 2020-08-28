@@ -1,11 +1,13 @@
 {% for item in site.data.projects %}
 <div class="project" role="group">
-  <h3 class="project__name">{{ item.project-name }}</h3>
-  <span class="tech-stack" role="presentation">Technologies used: </span>{{ item.project-tech-stack}} </br>
-  <ul class="project__description">
-  {% for item in item.project-description %} 
-    <li class="project__description__item">&ndash; &nbsp;{{ item in item.project-description.item }}</li>
-  {% endfor %}
-  </ul>
-</div>
+  <img class="project__img" src="{{item.project-img}}" alt=""/>
+  <div class="project-info" role="group">
+    <h3 class="project__name">{{ item.project-name }}</h3>
+    <span class="tech-stack" role="presentation">Technologies used: </span>{{ item.project-tech-stack}} </br>
+    <ul class="project__description">
+    {% for item in item.project-description %} 
+      <li class="project__description__item">&ndash; &nbsp;{{ item in item.project-description.item }}</li>
+    {% endfor %}
+    </ul>
+  </div>
 {% endfor %}
