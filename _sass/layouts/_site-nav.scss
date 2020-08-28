@@ -12,11 +12,11 @@
 
 .site-nav__link {
   color: $near-black;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
 
-  @include thick-underline($tangerine);
+  @include med-underline($tangerine);
 
   &:visited {
     color: $near-black;

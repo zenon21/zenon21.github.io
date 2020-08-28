@@ -6,8 +6,8 @@
 
 /// Underline link. Predefined thickeness for consitency
 /// @param {Array} $color
-@mixin thick-underline($color) {
-  border-bottom: 4px solid $color;
+@mixin med-underline($color) {
+  border-bottom: 2.5px solid $color;
 }
 
 /// Underlines link on hover effect
@@ -35,7 +35,7 @@ $breakpoints: (
   'small': 576px,
   'medium': 767px,
   'large': 992px,
-  'x-large': 1200px
+  'x-large': 1200px,
 ) !default;
 
 /// Mixin to manage responsive breakpoints
