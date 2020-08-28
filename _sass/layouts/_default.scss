@@ -4,13 +4,6 @@ html {
 }
 
 body {
-  margin: 1vw 7vw;
+  margin: 0 7vw;
   background-color: $cream;
-}
-
-.site-header {
-  @include respond-to('medium') {
-    width: min-content;
-    margin-top: 15vh;
-  }
 }

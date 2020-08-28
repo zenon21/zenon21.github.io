@@ -4,6 +4,8 @@ layout: default
 ---
 
 <section id="about-me">
+  <h1 class="site-title">{{site.name}}</h1>
+
   <p class="about-me__text">
     Hi! My name is Cate. I'm a full-stack developer with school experience
     working in Java and C. In the past few years, I've also picked up Python,
@@ -13,6 +15,8 @@ layout: default
   <div class="toggle-about">
     <a class="toggle-about__link" href="javascript:;">About Site</a>
   </div>
+
+  <div class="contact" role="group">{% include contact.html %}</div>
 </section>
 
 <section id="about-site" class="hidden">
@@ -44,6 +48,7 @@ layout: default
   </div>
 </section>
 
-<div class="contact">{% include contact.html %}</div>
-
-<section id="projects">{% include projects.html %}</section>
+<section id="projects">
+  <h2>Projects</h2>
+  {% include projects.html %}
+</section>

@@ -1,7 +1,10 @@
 #about-me,
 #about-site {
   animation: 1s ease fadeIn;
+  height: 100vh;
   line-height: 2em;
+  position: relative;
+  top: 2rem;
 
   a {
     color: $tangerine;
@@ -16,7 +19,16 @@
   }
 
   @include respond-to('large') {
+    top: 150px;
     width: 85%;
+  }
+}
+
+.site-title {
+  margin: 0;
+
+  @include respond-to('medium') {
+    width: min-content;
   }
 }
 
