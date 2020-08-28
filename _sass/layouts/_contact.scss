@@ -1,9 +1,8 @@
 /** Social Links **/
 .contact-links {
   list-style-type: none;
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 12px;
+  display: flex;
+  gap: 12px;
   margin-top: 2em;
   padding: 0;
   width: min-content;

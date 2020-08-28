@@ -2,12 +2,7 @@
 <ul class="site-nav">
   {% for item in site.data.site-nav-links %}
   <li class="site-nav__item">
-    <a
-      href="{{ item.link }}"
-      class="site-nav__link site-nav__link--{{ item.modifier }}"
-    >
-      {{ item.name }}
-    </a>
+    <a href="{{ item.link }}" class="site-nav__link"> {{ item.name }} </a>
   </li>
   {% endfor %}
 </ul>
