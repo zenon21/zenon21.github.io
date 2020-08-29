@@ -1,6 +1,11 @@
+html {
+  color: $near-black;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
 body {
   @include font-face($montserrat, 400, normal);
-  font-size: 16px;
 }
 
 h1,

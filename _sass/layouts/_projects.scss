@@ -1,14 +1,22 @@
 #projects {
   min-height: 100vh;
+  padding: 1rem 0;
+
+  @media (min-width: $medium) {
+    padding: 3rem 0;
+  }
 }
 
 .project {
   display: flex;
-  gap: 150px;
-}
+  align-items: center;
+  flex-direction: column;
 
-.project__name {
-  margin-bottom: 0.5rem;
+  @media (min-width: $large) {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 150px;
+  }
 }
 
 .project__description {
@@ -20,7 +28,16 @@
 
 .project__img {
   object-fit: contain;
-  width: 440px;
+  width: 100%;
+
+  @media (min-width: $large) {
+    width: 440px;
+  }
+}
+
+//take off top margin so it's aligned with project img
+.project__name {
+  margin: 0 0 0.5rem;
 }
 
 .tech-stack {
