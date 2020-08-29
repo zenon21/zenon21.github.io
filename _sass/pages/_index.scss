@@ -1,6 +1,7 @@
-#about-me,
-#about-site {
-  animation: 1s ease fadeIn;
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   line-height: 2em;
 
@@ -24,10 +25,8 @@
 
 .site-title {
   margin: 0;
-  padding-top: 2rem;
 
   @media (min-width: $medium) {
-    padding-top: 8rem;
     width: min-content;
   }
 }
