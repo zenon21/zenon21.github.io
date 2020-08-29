@@ -1,23 +1,22 @@
-- project-name: Intueat
-  project-img: /assets/img/intueat-dashboard.png
-  project-tech-stack:
+- name: Intueat
+  img: /assets/img/intueat-dashboard.png
+  tech-stack:
     - PostgreSQL
     - Node.js
     - Express
     - React
     - Redux
-  project-description:
+  description:
     - Front end in React
     - Backend in Node
-- project-name: Other Project
-  project-img: /assets/img/intueat-dashboard.png
-  project-tech-stack:
+- name: Other Project
+  img: /assets/img/intueat-dashboard.png
+  tech-stack:
     - PostgreSQL
     - Node.js
     - Express
     - React
     - Redux
-  project-description:
-  project-description:
+  description:
     - Front end in React
     - Backend in Node

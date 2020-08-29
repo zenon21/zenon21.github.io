@@ -1,16 +1,15 @@
-{% for item in site.data.projects %}
+{% for project in site.data.projects %}
 <div class="project" role="group">
-  <img class="project__img" src="{{item.project-img}}" alt="" />
+  <img class="project__img" src="{{project.img}}" alt="" />
   <div class="project-info" role="group">
-    <h3 class="project__name">{{ item.project-name }}</h3>
+    <h3 class="project__name">{{ project.name }}</h3>
+    <div class="project-links" role="group"></div>
     <div class="project__tech-stack" role="presentation">
-      {{ item.project-tech-stack | join: ' &bull; '}}
+      {{ project.tech-stack | join: ' &bull; '}}
     </div>
     <ul class="project__description">
-      {% for item in item.project-description %}
-      <li class="project__description__item">
-        &ndash; &nbsp;{{ item in item.project-description.item }}
-      </li>
+      {% for item in project.description %}
+      <li class="project__description__item">&ndash; &nbsp;{{item}}</li>
       {% endfor %}
     </ul>
   </div>
