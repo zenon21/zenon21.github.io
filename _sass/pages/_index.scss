@@ -5,6 +5,7 @@
   line-height: 2em;
   position: relative;
   top: 2rem;
+  z-index: -1;
 
   a {
     color: $tangerine;
@@ -18,7 +19,7 @@
     @include animated-hover-underline($tangerine);
   }
 
-  @include respond-to('large') {
+  @media (min-width: $medium) {
     top: 150px;
     width: 85%;
   }
