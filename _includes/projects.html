@@ -4,7 +4,7 @@
   <div class="project-info" role="group">
     <h3 class="project__name">{{ item.project-name }}</h3>
     <div class="project__tech-stack" role="presentation">
-      {{ item.project-tech-stack}}
+      {{ item.project-tech-stack | join: ' &bull; '}}
     </div>
     <ul class="project__description">
       {% for item in item.project-description %}
