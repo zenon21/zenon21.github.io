@@ -3,9 +3,6 @@
   animation: 1s ease fadeIn;
   height: 100vh;
   line-height: 2em;
-  position: relative;
-  top: 2rem;
-  z-index: -1;
 
   a {
     color: $tangerine;
@@ -27,8 +24,10 @@
 
 .site-title {
   margin: 0;
+  padding-top: 2rem;
 
   @include respond-to('medium') {
+    padding-top: 8rem;
     width: min-content;
   }
 }
