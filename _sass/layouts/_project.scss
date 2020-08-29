@@ -21,7 +21,7 @@
 .project__description {
   line-height: 1.75;
   list-style: none;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0;
   padding: 0;
 }
 
@@ -32,6 +32,15 @@
 
   @media (min-width: $large) {
     width: 440px;
+  }
+}
+
+.project-link__icon {
+  color: $tangerine;
+  font-size: 1.75rem;
+
+  @media (min-width: $medium) {
+    font-size: 1.5rem;
   }
 }
 

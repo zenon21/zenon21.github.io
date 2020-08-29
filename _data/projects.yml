@@ -1,5 +1,6 @@
 - name: Intueat
   img: /assets/img/intueat-dashboard.png
+  github-link: https://github.com/zenon21/food-log
   tech-stack:
     - PostgreSQL
     - Node.js
@@ -11,6 +12,8 @@
     - Backend in Node
 - name: Other Project
   img: /assets/img/intueat-dashboard.png
+  site-link: https://spice-y.surge.sh/
+  github-link: https://github.com/zenon21/spice-converter
   tech-stack:
     - PostgreSQL
     - Node.js
