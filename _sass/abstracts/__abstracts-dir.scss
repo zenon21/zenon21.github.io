@@ -1,5 +1,6 @@
 /* contains all abstract imports e.g. fonts, color variables, etc. */
 
+@import 'breakpoints';
+@import 'colors';
 @import 'fonts';
-@import 'variables';
 @import 'mixins';

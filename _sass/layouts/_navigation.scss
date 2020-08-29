@@ -4,7 +4,7 @@
   right: 1.5rem;
 
   /* Position top on larger screens */
-  @include respond-to('medium') {
+  @media (min-width: $medium) {
     top: 2rem;
     right: 2rem;
   }
