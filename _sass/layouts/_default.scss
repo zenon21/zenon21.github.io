@@ -8,3 +8,15 @@ body {
   margin: 0 7vw;
   background-color: $cream;
 }
+
+.primary-nav {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+  /* Position top on larger screens */
+  @media (min-width: $medium) {
+    top: 2rem;
+    right: 2rem;
+  }
+}

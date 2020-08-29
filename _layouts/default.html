@@ -27,7 +27,9 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <header id="top">{%include navigation.html %}</header>
+    <header id="top">
+      <nav class="primary-nav">{% include site-nav.html %}</nav>
+    </header>
     <main>{{ content }}</main>
   </body>
 </html>
