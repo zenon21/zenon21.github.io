@@ -1,8 +1,9 @@
 .site-nav {
-  list-style-type: none;
-  padding: 0;
   display: flex;
+  list-style: none;
   gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 /* remove default list styling */
