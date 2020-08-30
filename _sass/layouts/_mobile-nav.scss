@@ -1,0 +1,26 @@
+.mobile-nav__overlay {
+  background: $tangerine-60;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden !important;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  width: 100%;
+
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+
+.mobile-nav--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Nav toggle buttons */
+.nav-toggle-btn {
+  border: none;
+}

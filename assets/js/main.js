@@ -1,5 +1,5 @@
 function toggleMobileNav() {
-  const overlay = document.querySelector('.mobile-nav-overlay');
+  const overlay = document.querySelector('.mobile-nav__overlay');
 
-  overlay.classList.toggle('mobile-nav-open');
+  overlay.classList.toggle('mobile-nav--open');
 }
