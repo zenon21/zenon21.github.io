@@ -1,5 +1,12 @@
+.mobile-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
 .mobile-nav__overlay {
-  background: $tangerine-60;
+  background: $light-tangerine;
   height: 100%;
   left: 0;
   opacity: 0;
@@ -21,6 +28,13 @@
 }
 
 /* Nav toggle buttons */
-.nav-toggle-btn {
+.open-nav-btn,
+.close-nav-btn {
   border: none;
+}
+
+.close-nav-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
 }
