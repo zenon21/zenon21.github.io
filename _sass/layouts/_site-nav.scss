@@ -1,4 +1,4 @@
-/* Nav overlay - mobile only. Hidden by default */
+/* Mobile nav styles */
 .mobile-nav-overlay {
   background: $tangerine-60;
   height: 100%;
@@ -21,6 +21,12 @@
   visibility: visible;
 }
 
+/* Nav toggle buttons */
+.nav-toggle-btn {
+  border: none;
+}
+
+/* Desktop nav */
 .primary-nav {
   display: none;
 
@@ -29,35 +35,36 @@
   }
 }
 
-/* Nav toggle buttons */
-.nav-toggle-btn {
-  border: none;
-}
-
 /* Nav links */
 .site-nav {
-  display: flex;
   list-style: none;
-  gap: 15px;
-  margin: 0;
   padding: 0;
+  text-align: center;
+
+  @media (min-width: $medium) {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+  }
 }
 
-/* remove default list styling */
 .site-nav__item {
-  display: inline;
+  @media (min-width: $medium) {
+    display: inline;
+  }
 }
 
-.site-nav__link {
-  color: $near-black;
-  padding-bottom: 0.1rem;
+.site-nav__link,
+.site-nav__link:visited {
+  color: $cream;
   text-decoration: none;
-  text-transform: uppercase;
 
-  @include med-underline($tangerine);
-
-  &:visited {
+  @media (min-width: $medium) {
     color: $near-black;
+    padding-bottom: 0.1rem;
+    text-transform: uppercase;
+
+    @include med-underline($tangerine);
   }
 }
 

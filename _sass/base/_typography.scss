@@ -24,3 +24,8 @@ h3 {
   font-size: 1.25rem;
   font-weight: 500;
 }
+
+.mobile-nav {
+  @include font-face($playfair-display, 400, normal);
+  font-size: 2.25rem;
+}
