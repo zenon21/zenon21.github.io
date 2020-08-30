@@ -26,13 +26,27 @@
       </p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
     <header id="top">
-      <button class="nav-toggle-btn bubble bubble--orange">
+      <button
+        class="nav-toggle-btn bubble bubble--orange"
+        onclick="toggleMobileNav()"
+      >
         <i class="icon-menu"></i>
       </button>
       <nav class="primary-nav">{% include site-nav.html %}</nav>
     </header>
+
+    <!-- Mobile nav overlay -->
+    <aside class="mobile-nav-overlay">
+      <button
+        class="nav-toggle-btn bubble bubble--ecru"
+        onclick="toggleMobileNav()"
+      >
+        <i class="icon-cancel"></i>
+      </button>
+      <nav class="mobile-nav">{% include site-nav.html %}</nav>
+    </aside>
+
     <main>{{ content }}</main>
   </body>
 </html>
