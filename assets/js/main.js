@@ -1,13 +1,11 @@
-let toggleAboutLinks = document.getElementsByClassName('toggle-about__link');
+/**
+ * Opens mobile nav overlay and fixes body in place so it won't scroll while
+ * nav overlay is open.
+ */
+function toggleMobileNav() {
+  const body = document.querySelector('body');
+  const overlay = document.querySelector('.mobile-nav__overlay');
 
-for (const link of toggleAboutLinks) {
-  link.addEventListener('click', toggleAbouts);
-}
-
-function toggleAbouts() {
-  let aboutMe = document.getElementById('about-me');
-  let aboutSite = document.getElementById('about-site');
-
-  aboutMe.classList.toggle('hidden');
-  aboutSite.classList.toggle('hidden');
+  overlay.classList.toggle('mobile-nav--open');
+  body.classList.toggle('overflow-hidden');
 }
