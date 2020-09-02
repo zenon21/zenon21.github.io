@@ -7,9 +7,17 @@
     - Express
     - React
     - Redux
+    - Styled Components
+    - PassportJS
+    - Recharts
+  summary: A simple app to help users set & meet daily diet goals without needing to track calories or macros. Users can also update their profile & daily goals.
   description:
-    - Front end in React
-    - Backend in Node
+    - Designed UI in Figma; designed & normalized database to 3NF
+    - Implemented authentication with PassportJS
+    - Implemented error handling and input validation
+    - Created custom checkbox component to display logs
+    - Created custom calendar component and integrated Recharts library to display past entries in a visually appealing manner
+    - Syncs Redux state across tabs
 - name: Other Project
   img: /assets/img/intueat-dashboard.png
   site-link: https://spice-y.surge.sh/
