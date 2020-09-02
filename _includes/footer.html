@@ -1,0 +1,15 @@
+<footer>
+  <ul class="footer-contact-links">
+    {% for item in site.data.contact-links %}
+    <li class="footer-contact__item">
+      <a
+        class="footer-contact__link"
+        href="{{ item.link }}"
+        target="_blank"
+        aria-label="{{ item.label }}"
+        ><i class="footer__icon {{ item.icon }}"></i
+      ></a>
+    </li>
+    {% endfor %}
+  </ul>
+</footer>
