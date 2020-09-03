@@ -10,7 +10,7 @@
     <p class="project__summary">{{project.summary}}</p>
     <ul class="project__description">
       {% for item in project.description %}
-      <li class="project__description__item">&ndash; &nbsp;{{item}}</li>
+      <li class="project__description__item">{{item}}</li>
       {% endfor %}
     </ul>
     <div class="project-links" role="group">

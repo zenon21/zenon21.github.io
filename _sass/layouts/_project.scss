@@ -19,10 +19,11 @@
 }
 
 .project__description {
+  font-size: 0.9rem;
+  list-style-type: '–  ';
   line-height: 1.75;
-  list-style: none;
-  margin: 0.5rem 0 0;
-  padding: 0;
+  margin: 0;
+  padding-left: 1.5rem;
 }
 
 .project__img {
@@ -37,16 +38,16 @@
 
 .project-link__icon {
   color: $tangerine;
-  font-size: 1.75rem;
-
-  @media (min-width: $medium) {
-    font-size: 1.5rem;
-  }
+  font-size: 1.5rem;
 }
 
 //take off top margin so it's aligned with project img
 .project__name {
   margin: 0 0 0.5rem;
+}
+
+.project__summary {
+  margin: 0.25rem 0;
 }
 
 .project__tech-stack {
