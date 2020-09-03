@@ -1,20 +1,31 @@
 #projects {
   padding: 1rem 0;
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     padding: 3rem 0;
   }
 }
 
 .project {
+  align-items: flex-start; //must be specified for Safari
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+  width: 100%;
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     flex-direction: row;
-    gap: 11.5vw;
+    justify-content: space-between;
     margin-bottom: 4.5rem;
+  }
+}
+
+.project-info {
+  width: 100%;
+
+  @media (min-width: $large) {
+    margin-left: 2.5rem;
+    width: 33rem;
   }
 }
 
@@ -32,7 +43,8 @@
   width: 100%;
 
   @media (min-width: $large) {
-    width: 440px;
+    flex: initial;
+    width: 27.5rem;
   }
 }
 
