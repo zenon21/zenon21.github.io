@@ -18,16 +18,13 @@
     - Created custom checkbox component to display logs
     - Created custom calendar component and integrated Recharts library to display past entries in a visually appealing manner
     - Syncs Redux state across tabs
-- name: Other Project
-  img: /assets/img/intueat-dashboard.png
+- name: Spice Converter
+  img: /assets/img/spice-converter.png
   site-link: https://spice-y.surge.sh/
   github-link: https://github.com/zenon21/spice-converter
   tech-stack:
-    - PostgreSQL
-    - Node.js
-    - Express
     - React
-    - Redux
+    - React Select
+  summary: Converts spices from whole to ground, and vice versa
   description:
-    - Front end in React
-    - Backend in Node
+    - Used React hooks
