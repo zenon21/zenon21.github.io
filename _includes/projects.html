@@ -29,6 +29,15 @@
         aria-label="Project repo"
         ><i class="project-link__icon icon-github"></i
       ></a>
+
+      {% if project.demo-video %}
+      <a
+        class="project-demo-video"
+        href="{{ project.demo-video }}"
+        aria-label="Project demo video"
+        ><i class="project-link__icon icon-youtube-play"></i
+      ></a>
+      {% endif %}
     </div>
   </div>
 </div>
