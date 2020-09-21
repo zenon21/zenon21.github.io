@@ -1,7 +1,8 @@
 - name: Intueat
   img: /assets/img/intueat-dashboard.png
-  github-link: https://github.com/zenon21/food-log
   demo-video: https://www.youtube.com/watch?v=JR2e6igElg4
+  github-link: https://github.com/zenon21/food-log
+  site-link: https://intueat.herokuapp.com/
   tech-stack:
     - PostgreSQL
     - Node.js
