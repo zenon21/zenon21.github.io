@@ -1,7 +1,7 @@
 - name: Intueat
   img: /assets/img/intueat-dashboard.png
   demo-video: https://www.youtube.com/watch?v=JR2e6igElg4
-  github-link: https://github.com/zenon21/food-log
+  github-link: https://github.com/catehernandez/food-log
   site-link: https://intueat.herokuapp.com/
   tech-stack:
     - PostgreSQL
@@ -23,7 +23,7 @@
 - name: Spice Converter
   img: /assets/img/spice-converter.png
   site-link: https://spice-y.surge.sh/
-  github-link: https://github.com/zenon21/spice-converter
+  github-link: https://github.com/catehernandez/spice-converter
   tech-stack:
     - React
     - React Select
